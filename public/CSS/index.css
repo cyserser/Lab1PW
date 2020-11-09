@@ -1,0 +1,116 @@
+
+#cabecero {
+    border: 1px solid black;
+    background-color: deepskyblue;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 3em;
+
+}
+
+.listaNavegacion a{
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: "Comic Sans MS";
+    color: azure;
+
+}
+
+.listaNavegacion-derecha {
+    float: right;
+}
+
+/*#cabecero #logo {
+    font-size: 25px;
+    font-weight: bold;
+}*/
+
+#cabecero img {
+    float: left;
+    width: 100px;
+    height: 50px;
+
+}
+
+#lateral {
+    width: 22em;
+    float: right;
+    border: 1px solid blue;
+    margin-right: 10px;
+
+}
+
+#main{
+    margin-right: 23em;
+}
+
+.articulo {
+    border: 1px solid brown;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+.centrarBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS";
+    border-radius: 25px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: deepskyblue;
+}
+
+.figura{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+}
+
+#footer{
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    font-family: "Comic Sans MS";
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 200px;
+}
+
+
+
