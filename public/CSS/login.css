@@ -1,14 +1,23 @@
-
 #cabecero {
     border: 1px solid black;
     background-color: deepskyblue;
     padding: 20px;
     overflow: hidden;
     margin-bottom: 3em;
-
-
 }
 
+#footer{
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    font-family: "Comic Sans MS";
+}
 
 .listaNavegacion a{
     float: left;
@@ -70,19 +79,6 @@ input[type=text],input[type=date],input[type=email],input[type=password] {
 a:hover {
     background-color: #ddd;
     color: deepskyblue;
-}
-
-#footer{
-    background-color: deepskyblue;
-    color: white;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    border: 1px solid black;
-    font-family: "Comic Sans MS";
 }
 
 html {

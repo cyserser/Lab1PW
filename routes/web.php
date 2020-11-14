@@ -29,10 +29,6 @@ Route::get('/index', function () {
    return view('index');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
 Route::get('/nuevoCanal', function () {
     return view('nuevoCanal');
 });
@@ -43,3 +39,5 @@ Route::get('/register', function () {
 
 Route::get('/canales','Lab1PWController@canales');
 Route::get('/misCanales','Lab1PWController@misCanales');
+
+Route::get('/mostrarDatos','Lab1PWController@getDatos');

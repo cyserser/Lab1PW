@@ -14,6 +14,10 @@ class Lab1PWController extends Controller
         return view('misCanales');
     }
 
+    public function getDatos() {
+        return view('mostrarDatos');
+    }
+
 
 
 }

@@ -31,21 +31,23 @@
 
 </header>
 
-<form class="formulario" method="get" action="">
+<form class="formulario" id="formulario" method="get" action="mostrarDatos">
 
     <div class="formularioDiv">
 
-        <p><label>Nombre</label> <input type="text" size="15" name="name"></p>
+        <script language="JavaScript" src="js/comprobar.js"></script>
+
+        <p><label>Nombre</label> <input type="text" size="15" name="nombre" id="nombre"></p>
 
         <p><label>Fecha de nacimiento</label> <input type="date" size="15" name="date"></p>
 
         <p><label>Email</label> <input type="email" size="15" name="email"></p>
 
-        <p><label>Contraseña</label> <input type="password" size="15" name="password" minlength="8" maxlength="14" pattern="[A-Za-z0-9]+" required></p> <!-- el + para se pueda introducir todos los caracteres-->
+        <p><label>Contraseña</label> <input type="password" id="password1" size="15" name="password" minlength="8" maxlength="14" pattern="[A-Za-z0-9]+" required></p> <!-- el + para se pueda introducir todos los caracteres-->
 
-        <p><label>Repita contraseña</label> <input type="password" size="15" name="password2"></p>
+        <p><label>Repita contraseña</label> <input type="password" id="password2" size="15" name="password2"></p>
 
-        <input class="boton" type="reset" value="Borrar"> <input class="boton" type="submit" value="Enviar">
+        <input class="boton" type="reset" value="Borrar"> <input class="boton" type="submit" value="Enviar" onclick="comprobarDatos()">
 
 
 

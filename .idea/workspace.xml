@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0410e3b5-254b-4d4b-9e7a-ba739e308cf5" name="Default Changelist" comment="" />
+    <list default="true" id="0410e3b5-254b-4d4b-9e7a-ba739e308cf5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/comprobar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mostrarDatos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Lab1PWController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Lab1PWController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/ayuda.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/ayuda.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/canales.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/canales.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/contacto.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/contacto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/misCanales.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/misCanales.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/nuevoCanal.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/nuevoCanal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/registro.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/registro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ayuda.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ayuda.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/canales.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/canales.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contacto.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contacto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/misCanales.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/misCanales.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/nuevoCanal.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/nuevoCanal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,14 +168,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Lab1PW\public\CSS" />
       <recent name="C:\laragon\www\Lab1PW\resources\views" />
+      <recent name="C:\laragon\www\Lab1PW\public" />
+      <recent name="C:\laragon\www\Lab1PW\public\CSS" />
     </key>
   </component>
   <component name="RunManager">
@@ -149,16 +194,60 @@
       <option name="presentableId" value="Default" />
       <updated>1604926278201</updated>
       <workItem from="1604926279262" duration="2360000" />
+      <workItem from="1604940003249" duration="782000" />
+      <workItem from="1605043980512" duration="69000" />
+      <workItem from="1605044960165" duration="15000" />
+      <workItem from="1605044977492" duration="33000" />
+      <workItem from="1605045049972" duration="88000" />
+      <workItem from="1605094076825" duration="11000" />
+      <workItem from="1605220972323" duration="3028000" />
+      <workItem from="1605365829779" duration="1785000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="933" y="167" key="FileChooserDialogImpl" timestamp="1605094085696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605094085696" />
+    <state width="723" height="210" key="GridCell.Tab.0.bottom" timestamp="1605224155653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605224155653" />
+    <state width="723" height="210" key="GridCell.Tab.0.center" timestamp="1605224155653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605224155653" />
+    <state width="723" height="210" key="GridCell.Tab.0.left" timestamp="1605224155653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605224155653" />
+    <state width="723" height="210" key="GridCell.Tab.0.right" timestamp="1605224155653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="723" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605224155653" />
     <state x="988" y="339" key="NewPhpFileDialog" timestamp="1604926847641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="988" y="339" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604926847641" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605044001347">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605044001347" />
   </component>
 </project>

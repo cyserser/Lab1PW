@@ -1,14 +1,4 @@
 
-#cabecero {
-    border: 1px solid black;
-    background-color: deepskyblue;
-    padding: 20px;
-    overflow: hidden;
-    margin-bottom: 3em;
-
-
-}
-
 
 .listaNavegacion a{
     float: left;
