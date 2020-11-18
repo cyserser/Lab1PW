@@ -1,4 +1,5 @@
 
+
 function comprobarDatos(){
 
     document.getElementById("formulario").onsubmit = function (e) {
@@ -6,7 +7,6 @@ function comprobarDatos(){
 
         var passValue1 = document.getElementById("password1").value;
         var passValue2 = document.getElementById("password2").value;
-
 
         if(fieldValue == null || fieldValue == ""){
 
@@ -21,4 +21,6 @@ function comprobarDatos(){
         }
     }
 }
+
+
 

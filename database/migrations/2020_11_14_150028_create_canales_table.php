@@ -11,6 +11,8 @@ class CreateCanalesTable extends Migration
      *
      * @return void
      */
+
+
     public function up()
     {
         Schema::create('canales', function (Blueprint $table) {

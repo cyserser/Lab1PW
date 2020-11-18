@@ -37,7 +37,14 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/canales','Lab1PWController@canales');
-Route::get('/misCanales','Lab1PWController@misCanales');
+Route::get('/login', function () {
+    return view('login');
+});
 
-Route::get('/mostrarDatos','Lab1PWController@getDatos');
+Route::get('/misCanales', 'channelController@misCanales');
+
+Route::get('getDatos','registerController@getDatos');
+
+Route::get('/nuevoCanal','channelController@nuevoCanal');
+
+Route::get('procesarLogin','loginController@procesarLogin');

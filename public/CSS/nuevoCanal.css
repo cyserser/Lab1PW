@@ -7,18 +7,6 @@
     margin-bottom: 3em;
 }
 
-#footer{
-    background-color: deepskyblue;
-    color: white;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    border: 1px solid black;
-    font-family: "Comic Sans MS";
-}
 
 .listaNavegacion a{
     float: left;
@@ -84,3 +72,19 @@ html {
 body {
     margin: 0 0 200px;
 }
+
+#footer{
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    font-family: "Comic Sans MS";
+}
+
+
+

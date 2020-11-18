@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Usuario;
 use Illuminate\Http\Request;
 
 class Lab1PWController extends Controller
+
 {
     public function canales() {
         return view('canales');
@@ -13,11 +15,5 @@ class Lab1PWController extends Controller
     public function misCanales() {
         return view('misCanales');
     }
-
-    public function getDatos() {
-        return view('mostrarDatos');
-    }
-
-
 
 }
