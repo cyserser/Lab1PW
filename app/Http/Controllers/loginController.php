@@ -17,12 +17,24 @@ class loginController extends Controller
 
             $usuario = Usuario::where('email', $email) -> get();
 
-            if($usuario[0]['passwd'] == md5($password)){
+            if($usuario == '[]'){ // si esta vacio o no existe
+
+                return "<h3>El email no existe</h3>";
+
+            }
+
+            if($usuario[0]['email'] == $email && $usuario[0]['passwd'] == md5($password)){
+
                 $id = $usuario[0]['id'];
+                $name = $usuario[0]['nombre'];
 
                 session(['user' => $id]);
+                session(['name' => $name]);
 
-                return redirect()->to('misCanalesS');
+                return redirect()->to('myChannels');
+
+            } else {
+                return "<h3>La contraseña es incorrecta</h3>";
             }
 
         } else {
@@ -30,24 +42,6 @@ class loginController extends Controller
             return "<h3>Rellene todos los campos</h3>";
         }
 
-        return "<h3>El email no existe</h3>";
-
     }
 
 }
-
-/*public function login() {
-
-    $users = Usuario::all();
-
-    $email = $_GET["email"];
-
-    foreach($users as $usuario){
-
-        if($usuario->getAttribute('email') == $email ){
-
-            return view('misCanales');
-        }
-    }
-    return redirect('login');
-}*/

@@ -16,7 +16,7 @@ class CreateDatossensoresTable extends Migration
         Schema::create('datossensores', function (Blueprint $table) {
             $table->UnsignedInteger('id')->autoIncrement();
             $table->unsignedInteger('id_canal');
-            $table->foreign('id_canal')->references('id_user')->on('canales');
+            $table->foreign('id_canal')->references('id')->on('canales');
             $table->float('dato');
             $table->dateTime('fecha');
             $table->timestamps();

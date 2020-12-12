@@ -41,10 +41,51 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/misCanales', 'channelController@misCanales');
+Route::get('/user', function () {
+    return view('user');
+});
 
-Route::get('getDatos','registerController@getDatos');
+Route::get('/canales', function () {
+    return view('canales');
+});
 
-Route::get('/nuevoCanal','channelController@nuevoCanal');
+Route::get('/getDatosGrafica{id}', function ($id) {
+    return view('datosSensores', ['idCanal'=>$id]);
+});
 
-Route::get('procesarLogin','loginController@procesarLogin');
+Route::get('/getWebServiceRest{id}', function ($id) {
+    return view('webServiceForm', ['idCanalRest'=>$id]);
+});
+
+Route::get('/ajaxUsers', 'channelController@ajaxUsers');
+
+Route::get('/ajaxChannels', 'channelController@ajaxChannels');
+
+Route::get('/ajaxLastUser', 'channelController@ajaxLastUser');
+
+Route::get('/myChannels', 'channelController@myChannels');
+
+Route::get('/getDatos','registerController@getDatos');
+
+Route::get('/newChannel','channelController@newChannel');
+
+Route::get('/channel','channelController@channel');
+
+Route::get('/procesarLogin','loginController@procesarLogin');
+
+Route::get('/deleteChannel/{id}','channelController@deleteChannel');
+
+Route::get('/cerrarSession','channelController@cerrarSession');
+
+Route::get('/getDatosSensores{id}','channelController@getDatosSensores');
+
+Route::get('/requestWebServiceRest{id}','channelController@requestWebServiceRest');
+
+Route::get('/webServiceRest{query}','channelController@webServiceRest');
+
+Route::get('/procesarWebServiceRest','webServiceController@procesarWebServiceRest');
+
+
+
+
+

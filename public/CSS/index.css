@@ -34,8 +34,10 @@
 #lateral {
     width: 22em;
     float: right;
-    border: 1px solid blue;
+    border: 5px solid orange;
     margin-right: 10px;
+    border-radius: 20px;
+
 
 }
 
@@ -44,10 +46,11 @@
 }
 
 .articulo {
-    border: 1px solid brown;
+    border: 5px solid orange;
     text-align: left;
     padding: 20px;
     margin: 10px;
+    border-radius: 20px;
 }
 .centrarBoton {
     display: flex;
@@ -72,6 +75,7 @@
 
 a:hover {
     background-color: #ddd;
+    zoom: normal;
     color: deepskyblue;
 }
 
@@ -106,6 +110,44 @@ body {
     border: 1px solid black;
     font-family: "Comic Sans MS";
 }
+
+table {
+    font-family: "Comic Sans MS", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: lightskyblue;
+}
+
+h1, p{
+    font-family: "Comic Sans MS";;
+}
+
+.grafica {
+    width: 50px;
+    height: 50px;
+}
+
+.section{
+    border: 2px solid lightcoral;
+}
+
+.warning {
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 
 
 

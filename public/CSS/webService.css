@@ -1,0 +1,104 @@
+#cabecero {
+    border: 1px solid black;
+    background-color: deepskyblue;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 3em;
+}
+
+.listaNavegacion a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: "Comic Sans MS";
+    color: azure;
+
+}
+
+.listaNavegacion-derecha {
+    float: right;
+}
+
+.boton2{
+
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+#cabecero img {
+    float: left;
+    width: 100px;
+    height: 50px;
+
+}
+
+a:hover {
+    background-color: #ddd;
+    color: deepskyblue;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.formularioDiv{
+    display: inline-block;
+    text-align: right;
+    font-family: "Comic Sans MS";
+}
+
+input[type=text],input[type=date],input[type=email],input[type=password] {
+    width: 225px;
+}
+
+.boton{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#footer{
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    font-family: "Comic Sans MS";
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 200px;
+}
+
+.p1 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
