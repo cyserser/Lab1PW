@@ -19,29 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Commit final Lab 1">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/invoiceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/orderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/orderDetailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/productController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Invoice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/OrderDetail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123051_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123126_create_ordenes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123143_create_ordenes_detail_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123159_create_factura_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/myIoTshop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/axe.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/shoppingCart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/addProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/myIoTshop.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/myIoTsocial.php" afterDir="false" />
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="T2.0 Commit inicial del Lab 2">
+      <change beforePath="$PROJECT_DIR$/.idea/Lab1PW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab1PW.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/headerLogged.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/headerLogged.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +149,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kTuDhr7J3rBipodv2YvL2eMWll" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -181,11 +161,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -243,7 +223,9 @@
       <workItem from="1607515308404" duration="169000" />
       <workItem from="1607775456655" duration="462000" />
       <workItem from="1607933210376" duration="1939000" />
-      <workItem from="1607948491491" duration="5891000" />
+      <workItem from="1607948491491" duration="6454000" />
+      <workItem from="1607962449241" duration="342000" />
+      <workItem from="1607969590838" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -252,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607775776972</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="T2.0 Commit inicial del Lab 2">
+      <created>1607961892503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607961892503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +262,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Commit final Lab 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit final Lab 1" />
+    <MESSAGE value="T2.0 Commit inicial del Lab 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="T2.0 Commit inicial del Lab 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1606145738736">
@@ -292,22 +282,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1606663222552" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607952337401">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607969585211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607952337401" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607969585211" />
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1607969699403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1607969699403" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1607954325846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1607954325846" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1606772702351">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1607962792052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606772702351" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607775784170">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607962792052" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607961895356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607775784170" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607961895356" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607962728103">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1607962728103" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1607953428238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
