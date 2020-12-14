@@ -11,6 +11,8 @@ $usuarios = session('usuarios');
                 <a href="channel">Canales</a>
                 <a href="ayuda">Ayuda</a>
                 <a href="contacto">Contacto</a>
+                <a href="myIoTshop">MyIoT Shop</a>
+                <a href="myIoTsocial">MyIoT Social</a>
                 <div class="listaNavegacion-derecha">
 
                     <a href="myChannels"> Nombre de usuario: <?php echo $usuarios ?> </a>

@@ -19,240 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/CSS/webService.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/stats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/comprobarLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/comprobarNewChannel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/comprobarServicioWeb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts-3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts-3d.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts-more.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts-more.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/highcharts.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/accessibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/accessibility.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/accessibility.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations-advanced.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations-advanced.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations-advanced.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/annotations.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/arrow-symbols.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/arrow-symbols.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/arrow-symbols.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost-canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost-canvas.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost-canvas.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/boost.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/broken-axis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/broken-axis.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/broken-axis.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/bullet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/bullet.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/bullet.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/coloraxis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/coloraxis.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/coloraxis.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/current-date-indicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/current-date-indicator.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/current-date-indicator.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/cylinder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/cylinder.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/cylinder.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/data.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/data.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/datagrouping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/datagrouping.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/datagrouping.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/debugger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/debugger.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/debugger.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dependency-wheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dependency-wheel.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dependency-wheel.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dotplot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dotplot.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/dotplot.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drag-panes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drag-panes.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drag-panes.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/draggable-points.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/draggable-points.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/draggable-points.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drilldown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drilldown.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/drilldown.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/export-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/export-data.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/export-data.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/exporting.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/exporting.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/full-screen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/full-screen.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/full-screen.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel3d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/funnel3d.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/gantt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/gantt.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/gantt.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/grid-axis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/grid-axis.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/grid-axis.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/heatmap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/heatmap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/heatmap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/histogram-bellcurve.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/histogram-bellcurve.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/histogram-bellcurve.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/item-series.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/item-series.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/item-series.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/networkgraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/networkgraph.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/networkgraph.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/no-data-to-display.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/no-data-to-display.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/no-data-to-display.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/offline-exporting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/offline-exporting.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/offline-exporting.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie-polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie-polyfills.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie-polyfills.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/oldie.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/organization.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/organization.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/organization.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/overlapping-datalabels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/overlapping-datalabels.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/overlapping-datalabels.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/parallel-coordinates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/parallel-coordinates.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/parallel-coordinates.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pareto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pareto.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pareto.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pathfinder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pathfinder.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pathfinder.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pattern-fill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pattern-fill.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pattern-fill.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/price-indicator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/price-indicator.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/price-indicator.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pyramid3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pyramid3d.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/pyramid3d.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sankey.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sankey.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sankey.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/series-label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/series-label.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/series-label.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/solid-gauge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/solid-gauge.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/solid-gauge.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sonification.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sonification.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sonification.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/static-scale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/static-scale.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/static-scale.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock-tools.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock-tools.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock-tools.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/stock.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/streamgraph.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/streamgraph.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/streamgraph.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sunburst.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sunburst.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/sunburst.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/tilemap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/tilemap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/tilemap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/timeline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/timeline.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/timeline.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treegrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treegrid.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treegrid.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treemap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treemap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/treemap.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variable-pie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variable-pie.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variable-pie.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variwide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variwide.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/variwide.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/vector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/vector.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/vector.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/venn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/venn.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/venn.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/windbarb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/windbarb.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/windbarb.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/wordcloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/wordcloud.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/wordcloud.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/xrange.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/xrange.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/modules/xrange.src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/rememberMe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/datosSensores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/get_temp_json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/headerCanales.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/headerLogged.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index-line-times.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/webServiceForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lab1PW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab1PW.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_9_11_20_12_51.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_21_33_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_2020_21_33__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Commit final Lab 1">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/invoiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/orderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/orderDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/productController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Invoice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/OrderDetail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123051_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123126_create_ordenes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123143_create_ordenes_detail_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123159_create_factura_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/CSS/myIoTshop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/axe.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/shoppingCart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/addProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/myIoTshop.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/myIoTsocial.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Canales.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Canales.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/channelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/channelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/loginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/registerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/registerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_150028_create_canales_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_150028_create_canales_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_150146_create_datossensores_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_150146_create_datossensores_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/CSS/canales.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/canales.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/CSS/misCanales.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/misCanales.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/CSS/nuevoCanal.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/nuevoCanal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/comprobar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/comprobar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/headerLogged.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/headerLogged.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -392,23 +181,24 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Lab1PW\public\img" />
+      <recent name="C:\laragon\www\Lab1PW\public\js" />
+      <recent name="C:\laragon\www\Lab1PW\public" />
+      <recent name="C:\laragon\www\Lab1PW\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Lab1PW\public\js" />
       <recent name="C:\laragon\www\Lab1PW\public" />
       <recent name="C:\laragon\www\Lab1PW\resources\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Lab1PW\public\js" />
-      <recent name="C:\laragon\www\Lab1PW\public" />
-      <recent name="C:\laragon\www\Lab1PW\resources\views" />
-      <recent name="C:\laragon\www\Lab1PW\public\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -451,7 +241,18 @@
       <workItem from="1607511836026" duration="71000" />
       <workItem from="1607514961950" duration="16000" />
       <workItem from="1607515308404" duration="169000" />
+      <workItem from="1607775456655" duration="462000" />
+      <workItem from="1607933210376" duration="1939000" />
+      <workItem from="1607948491491" duration="5891000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit final Lab 1">
+      <created>1607775776972</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607775776972</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,6 +272,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit final Lab 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit final Lab 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="55" key="#PHP" timestamp="1606145738736">
@@ -481,30 +284,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="451" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606912136549" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606912305173">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607953530748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606912305173" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607953530748" />
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606663222552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1606663222552" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607511908724">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1607952337401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607511908724" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1607181713409">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607952337401" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1607954325846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1607181713409" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1607954325846" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1606772702351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606772702351" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1607185626799">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607775784170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607185626799" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607775784170" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1607953428238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1607953428238" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607191223238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -57,6 +57,14 @@ Route::get('/getWebServiceRest{id}', function ($id) {
     return view('webServiceForm', ['idCanalRest'=>$id]);
 });
 
+Route::get('/myIoTshop', function () {
+    return view('myIoTshop');
+});
+
+Route::get('/myIoTsocial', function () {
+    return view('myIoTsocial');
+});
+
 Route::get('/ajaxUsers', 'channelController@ajaxUsers');
 
 Route::get('/ajaxChannels', 'channelController@ajaxChannels');

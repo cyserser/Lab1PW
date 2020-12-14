@@ -27,9 +27,11 @@ class loginController extends Controller
 
                 $id = $usuario[0]['id'];
                 $name = $usuario[0]['nombre'];
+                $email = $usuario[0]['email'];
 
                 session(['user' => $id]);
                 session(['name' => $name]);
+                session(['email'=> $email]);
 
                 return redirect()->to('myChannels');
 
