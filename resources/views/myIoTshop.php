@@ -66,6 +66,7 @@ if($email=="admin"){
 }
 ?>
 
+
 <aside id="lateral">
     <div class="row">
         <img class="shoppingCartIcon" src="img/shoppingCart.png" alt="shoppingCart">
