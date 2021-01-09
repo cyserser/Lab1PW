@@ -5,7 +5,8 @@
     <title>Añadir producto</title>
 
     <link rel="stylesheet" href="CSS/nuevoCanal.css">
-    <script type="text/javascript" src="js/comprobarNewChannel.js"></script>
+    <link rel="stylesheet" href="CSS/myIoTshop.css">
+    <script type="text/javascript" src="js/comprobarDatosProducto.js"></script>
 
 </head>
 <body>
@@ -21,23 +22,33 @@ if($canales != null && $usuarios != null){
 }
 ?>
 
-<form class="formulario" id="formularioAddProduct" method="get" action="addProduct">
+
+<h1 style="text-align: center" class="create">Create Product</h1>
+
+
+<form class="formulario" id="formularioAddProduct" method="get" action="newProduct">
 
     <div class="formularioDiv">
 
-        <p><label>Nombre del canal</label> <input type="text" size="15" name="nombreCanal" id="nombreCanal"></p>
+        <p><label>Nombre del producto</label> <input type="text" size="15" name="nombreProducto" id="nombreProducto"></p>
 
         <p><label>Descripción</label> <input type="text" size="15" name="descripcion" id="descripcion"></p>
 
-        <p><label>Longitud</label> <input type="number" size="15" name="longitud" id="longitud"></p>
+        <p><label>Precio</label> <input type="number" size="15" name="precio" id="precio"></p>
 
-        <p><label>Latitud</label> <input type="number" size="15" name="latitud" id="latitud"></p>
+<!--        <p><label>Imagen</label> <input type="text" size="15" name="imagen" id="imagen"></p>-->
+        <label>Imagen</label>
+        <select style="width: 200px" name="imagen" id="imagen">
+            <option value="axe">axe</option>
+            <option value="horno1">horno1</option>
+            <option value="stats">stats</option>
+        </select>
 
-        <p><label>Nombre del sensor</label> <input type="text" size="15" name="nombreSensor" id="nombreSensor"></p>
+        <p><label>Fecha</label> <input type="date" size="15" name="date" id="date"></p>
 
         <input class="boton" type="reset" value="Borrar">
 
-        <input class="boton" type="button" value="Crear" onclick="comprobarDatosNewChannel();">
+        <input class="boton" type="button" value="Crear" onclick="comprobarDatosProducto();">
 
     </div>
 

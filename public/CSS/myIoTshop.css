@@ -87,9 +87,57 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    display: block;
 }
 .botonCard{
     background-color: deepskyblue;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS",arial,sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+.shoppingCartIcon {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+.rowProduct {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.columnProduct {
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    margin: 40px;
+}
+
+.ajaxP{
+    margin-left: 0px;
+    font-size: 25px;
+    background: yellow;
+}
+
+.botonCardAdd{
+    background-color: deepskyblue;
+    width:150px;
+    height: 150px;
     border: 1px solid black;
     border-radius: 12px;
     color: black;
@@ -102,13 +150,48 @@
     cursor: pointer;
     font-family: "Comic Sans MS",arial,sans-serif;
     text-decoration: none;
-
-    font-size: 20px;
+    font-size: 15px;
 }
 
-.shoppingCartIcon {
-    width: auto;
-    height: 80px;
+.create {
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: deepskyblue;
+}
+
+.imgSize {
+    width: 210px;
+    height: auto;
+}
+
+.selectSize {
+    width: 225px;
+}
+
+.botonEliminar{
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
     padding: 10px;
-    margin-left: 20px;
+}
+.grid-item {
+    padding: 20px;
+    font-size: 5vw;
+    text-align: center;
 }

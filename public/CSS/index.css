@@ -37,8 +37,6 @@
     border: 5px solid orange;
     margin-right: 10px;
     border-radius: 20px;
-
-
 }
 
 #main{
@@ -52,6 +50,7 @@
     margin: 10px;
     border-radius: 20px;
 }
+
 .centrarBoton {
     display: flex;
     justify-content: center;

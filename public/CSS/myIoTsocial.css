@@ -1,0 +1,140 @@
+.sectionTwo {
+    text-align: left;
+
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.containerDos {
+    position: relative;
+    width: 100%;
+}
+
+.rowProduct {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columnProduct {
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    margin: 40px;
+}
+
+.profileImg{
+    width: 100%;
+    max-width: 20vw;
+    height: auto;
+    border-radius: 50%;
+}
+
+.socialAside {
+    width: 63%;
+    float: right;
+    border: 5px solid orange;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.socialArticle {
+    border: 5px solid orange;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+
+.textJustify{
+    text-align: justify;
+}
+
+.grid-containerSocial {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-itemSocial {
+    padding: 10px;
+    font-size: 1vw;
+    margin: 1%;
+    text-align: center;
+}
+
+.grid-containerDos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-itemDos {
+    border: 5px solid orange;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.botonSocialOpciones{
+    background-color: orange;
+    width: 20vw;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS",arial,sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+.botonSocialOpcionesDos{
+    background-color: deepskyblue;
+    width: 20vw;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS",arial,sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.grid-containerTres {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.center {
+
+    margin: auto;
+
+    width: 60%;
+
+    border: 5px solid #FFFF00;
+
+    padding: 10px;
+
+}

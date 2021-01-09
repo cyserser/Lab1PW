@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->UnsignedInteger('id')->autoIncrement();
             $table->string('nombre',50);
             $table->string('descripcion',50);
+            $table->string('imagen',50);
             $table->double('precio');
             $table->dateTime('fecha');
             $table->timestamps();

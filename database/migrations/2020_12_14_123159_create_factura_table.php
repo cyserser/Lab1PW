@@ -23,7 +23,6 @@ class CreateFacturaTable extends Migration
             $table->string('moneda',50);
             $table->float('total');
             $table->string('formaDePago',50);
-            $table->dateTime('fecha');
 
             $table->timestamps();
         });
