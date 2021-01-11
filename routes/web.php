@@ -143,6 +143,9 @@ Route::get('/paypal/status','paypalController@payPalStatus');
 
 /********** Redes Sociales ************/
 
+Route::get('/seguirSocial{id}','socialController@seguirSocial');
+
+
 
 
 
