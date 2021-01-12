@@ -17,7 +17,12 @@ class socialController extends Controller
         return Friends::all();
     }
 
-    public static function seguirSocial($id){
+    public static function getFriendCount(){
+        $friend = self::getAllFriend();
+        return $friend->count();
+    }
+
+    public function seguirSocial($id){
 
         $id_user = session('user');
         $friend = new Friends();
@@ -25,6 +30,17 @@ class socialController extends Controller
         $friend->id_user = $id_user ;
         $friend->id_friend = $id;
         $friend->save();
+
+        return redirect()->to("miembros");
+
+    }
+
+    public function noSeguirSocial($id){
+
+        $id_user = session('user');
+
+        Friends::where('id_user','=',$id_user) && Friends::where('id_friend','=',$id)->delete();
+
 
         return redirect()->to("miembros");
 

@@ -25,17 +25,18 @@ if ($usuarios != null) {
 
 
 $usersAll = channelController::getUsers();
-$friendAll = socialController::getAllFriend()
+$friendAll = socialController::getAllFriend();
+
 ?>
 <body>
 
 <div class="grid-container">
 
     <div class="grid-itemDos">
-        <button class="botonSocialOpciones">Members</button>
-        <button class="botonSocialOpciones">Friends</button>
-        <button class="botonSocialOpciones">Messages</button>
-        <button class="botonSocialOpciones">Edit profile</button>
+        <button class="botonSocialOpciones" onclick="location.href = '<?php echo "miembros" ?>'" >Members</button>
+        <button class="botonSocialOpciones" onclick="location.href = '<?php echo "amigos" ?>'">Friends</button>
+        <button class="botonSocialOpciones" onclick="location.href = '<?php echo "mensajes" ?>'">Messages</button>
+        <button class="botonSocialOpciones" onclick="location.href = '<?php echo "perfil" ?>'">Edit profile</button>
     </div>
 
 </div>
@@ -43,30 +44,49 @@ $friendAll = socialController::getAllFriend()
 
 <section>
     <?php foreach ($usersAll as $user) {
-        if (session('email') == $user->email) {
-        } else {
+        if (session('email') != $user->email) {
             ?>
             <article class="canalArticulo">
+                <?php echo $user->id ?>
                 <p>Nombre: <?php echo $user->nombre ?> </p>
                 <p>Email:<?php echo $user->email ?></p>
-                <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?> </p>
+                <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
+                <?php
+                ?>
+                <form method="get" name="seguirSocial" action="<?php echo "seguirSocial" . $user->id ?>">
+                    <button class="boton2" type="submit">Follow</button>
+                </form>
+                <?php
+                ?>
+                <?php
+
+                ?>
                 <?php
                 if (session('user') != null) {
                     foreach ($friendAll as $friend) {
-                        if ($friend->id_user == session('user')) {
-                            echo $user->nombre . " &larr; you are following";
-                        } else {
-                            ?>
-                            <form method="get" name="seguirSocial" action="<?php echo "seguirSocial" . $user->id ?>">
-                                <button class="boton2" type="submit"> Seguir</button>
-                            </form>
-                            <?php
+                        if($friend->id_friend == $user->id ){
+                            echo $user->nombre. " &larr; you are following";
+                            echo $friend->id_friend;
                         }
                     }
                     ?>
                     <?php
                 }
                 ?>
+<!--                --><?php
+//                foreach ($friendAll as $friend) {
+//                    if ($friend->id_user == session('user') && $user->email == session('email')) {
+//                        ?>
+<!--                        <form method="get" name="noSeguirSocial" action="--><?php //echo "noSeguirSocial" . $user->id ?><!--">-->
+<!--                            <button class="boton2" type="submit">Unfollow</button>-->
+<!--                        </form>-->
+<!--                        --><?php
+//                    } else {
+//                        ?>
+<!--                        --><?php
+//                    }
+//                }
+//                ?>
             </article>
             <?php
         }
