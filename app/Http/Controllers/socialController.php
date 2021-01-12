@@ -31,7 +31,31 @@ class socialController extends Controller
         $friend->id_friend = $id;
         $friend->save();
 
+        session(["idFriend" => $id]);
         return redirect()->to("miembros");
+
+    }
+
+    public static function comprobarBond($id){
+        $id_user = session('user');
+
+        if( Friends::where('id_user','=',$id_user) && Friends::where('id_friend','=',$id)->exists()){
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public static function meSiguen($id){
+        $id_user = session('user');
+
+        if(Friends::where('id_user','=',$id)
+            ->where('id_friend','=',$id_user)->exists()){
+            return true;
+        } else {
+            return false;
+        }
 
     }
 

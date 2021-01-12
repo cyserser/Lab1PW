@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
     <link rel="stylesheet" href="CSS/canales.css">
 
+    <script type="text/javascript" src="js/followHide.js"></script>
+
 </head>
 
 <?php use App\Http\Controllers\channelController;
@@ -27,6 +29,10 @@ if ($usuarios != null) {
 $usersAll = channelController::getUsers();
 $friendAll = socialController::getAllFriend();
 
+if (session()->has('popup')) {
+    echo '<script type="text/javascript"> document.getElementById("hide").hidden = true;</script>';
+//   echo '<script type="text/javascript">alert("Ya tenías dicho producto en la wishList!")</script>';
+}
 ?>
 <body>
 
@@ -51,40 +57,46 @@ $friendAll = socialController::getAllFriend();
                 <p>Nombre: <?php echo $user->nombre ?> </p>
                 <p>Email:<?php echo $user->email ?></p>
                 <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
+
                 <?php
+                if(session('email') != null){
+                    if(socialController::comprobarBond($user->id) == true){
                 ?>
-                <form method="get" name="seguirSocial" action="<?php echo "seguirSocial" . $user->id ?>">
-                    <button class="boton2" type="submit">Follow</button>
-                </form>
+                    <form method="get" name="noSeguirSocial" action="<?php echo "noSeguirSocial" . $user->id ?>">
+                        <button class="boton2" type="submit">Unfollow</button>
+                    </form>
                 <?php
+                    }else {
+                        ?>
+                        <div id="hide">
+                            <form method="get" name="seguirSocial" id="seguirSocial" action="<?php echo "seguirSocial" . $user->id ?>">
+                                <button class="boton2" id="follow" type="submit">Follow</button>
+                                <!--                        <input class="boton2" type="button" value="Follow" onclick="comprobarFollow();">-->
+                            </form>
+                        </div>
+                <?php
+                    }
+                }
+
+                if(socialController::meSiguen($user->id) == true) {
+                    echo $user->nombre." &rarr; is following you";
+                    echo "<br>";
+                    }
                 ?>
                 <?php
 
-                ?>
-                <?php
                 if (session('user') != null) {
                     foreach ($friendAll as $friend) {
                         if($friend->id_friend == $user->id ){
                             echo $user->nombre. " &larr; you are following";
-                            echo $friend->id_friend;
+//                            echo $friend->id_friend;
+                            ?>
+
+                            <?php
                         }
                     }
                     ?>
                     <?php
-                }
-                ?>
-                <?php
-                foreach ($friendAll as $friend) {
-                    if ($friend->id_user == session('user')) {
-                        ?>
-                        <form method="get" name="noSeguirSocial" action="<?php echo "noSeguirSocial" . $user->id ?>">
-                            <button class="boton2" type="submit">Unfollow</button>
-                        </form>
-                        <?php
-                    } else {
-                        ?>
-                        <?php
-                    }
                 }
                 ?>
             </article>
@@ -94,6 +106,19 @@ $friendAll = socialController::getAllFriend();
     ?>
 
 </section>
+<script>
+    const hello = (element) => {
+        element.hidden = true;
+    }
+</script>
+
+<script>
+    function showHide(id){
+        $("#"+id).hidden;
+    }
+</script>
+
+
 </body>
 <?php include 'footer.php'; ?>
 </html>

@@ -5,7 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2">
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2.1">
+      <change afterPath="$PROJECT_DIR$/public/js/followHide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/miembros.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/miembros.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -147,7 +150,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cybergangas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -215,6 +218,7 @@
       <workItem from="1607969590838" duration="1807000" />
       <workItem from="1610206017097" duration="3335000" />
       <workItem from="1610352669511" duration="9976000" />
+      <workItem from="1610464421610" duration="6111000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -251,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610411387976</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="redes sociales 2.1">
+      <created>1610411961684</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610411961684</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +292,7 @@
     <MESSAGE value="T2.1 Commit second del Lab 2" />
     <MESSAGE value="T2.2 Git ignore" />
     <MESSAGE value="redes sociales 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="redes sociales 2" />
+    <MESSAGE value="redes sociales 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="redes sociales 2.1" />
   </component>
 </project>
