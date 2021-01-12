@@ -53,7 +53,7 @@ if (session()->has('popup')) {
         if (session('email') != $user->email) {
             ?>
             <article class="canalArticulo">
-                <?php echo $user->id ?>
+<!--                --><?php //echo $user->id ?>
                 <p>Nombre: <?php echo $user->nombre ?> </p>
                 <p>Email:<?php echo $user->email ?></p>
                 <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
@@ -77,14 +77,12 @@ if (session()->has('popup')) {
                 <?php
                     }
                 }
-
                 if(socialController::meSiguen($user->id) == true) {
                     echo $user->nombre." &rarr; is following you";
                     echo "<br>";
                     }
                 ?>
                 <?php
-
                 if (session('user') != null) {
                     foreach ($friendAll as $friend) {
                         if($friend->id_friend == $user->id ){
