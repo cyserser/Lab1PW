@@ -5,12 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="T2.2 Git ignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/amigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/amigos.php" afterDir="false" />
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2">
       <change beforePath="$PROJECT_DIR$/resources/views/miembros.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/miembros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607971163018</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="redes sociales 2">
+      <created>1610411387976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610411387976</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +280,7 @@
     <MESSAGE value="T2.0 Commit inicial del Lab 2" />
     <MESSAGE value="T2.1 Commit second del Lab 2" />
     <MESSAGE value="T2.2 Git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="T2.2 Git ignore" />
+    <MESSAGE value="redes sociales 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="redes sociales 2" />
   </component>
 </project>

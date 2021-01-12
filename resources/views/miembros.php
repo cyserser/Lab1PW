@@ -73,20 +73,20 @@ $friendAll = socialController::getAllFriend();
                     <?php
                 }
                 ?>
-<!--                --><?php
-//                foreach ($friendAll as $friend) {
-//                    if ($friend->id_user == session('user') && $user->email == session('email')) {
-//                        ?>
-<!--                        <form method="get" name="noSeguirSocial" action="--><?php //echo "noSeguirSocial" . $user->id ?><!--">-->
-<!--                            <button class="boton2" type="submit">Unfollow</button>-->
-<!--                        </form>-->
-<!--                        --><?php
-//                    } else {
-//                        ?>
-<!--                        --><?php
-//                    }
-//                }
-//                ?>
+                <?php
+                foreach ($friendAll as $friend) {
+                    if ($friend->id_user == session('user')) {
+                        ?>
+                        <form method="get" name="noSeguirSocial" action="<?php echo "noSeguirSocial" . $user->id ?>">
+                            <button class="boton2" type="submit">Unfollow</button>
+                        </form>
+                        <?php
+                    } else {
+                        ?>
+                        <?php
+                    }
+                }
+                ?>
             </article>
             <?php
         }
