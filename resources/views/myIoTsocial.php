@@ -84,11 +84,13 @@ $getTextCheck = socialController::getProfilesCount(session('user'));
 
                     </div>
                     <div class="grid-itemSocial">
-                        <h3>Mi estado</h3>
+                        <h1>Mi estado</h1>
                         <?php
 
                         if($getTextCheck == false){
-                            echo "NO ha escrito nada";
+                            ?>
+                            <h1 style="color: red">No ha modificado su estado aun</h1>
+                        <?php
                             } else {
                         foreach ($profilesAllReverse as $profile) {
                             if ($profile->id_user == session('user')) {
@@ -141,13 +143,22 @@ $getTextCheck = socialController::getProfilesCount(session('user'));
             <h1>Muro de myWebIoT</h1>
         </hgroup>
 
+        <?php
+        if($messagesAllReverse->count()==0){
+            ?>
+            <h1 style="color: red">Nadie ha enviado nada todavia</h1>
+            <?php
 
+        } else {
+        ?>
         <div class="" id="ajaxMessages">
             <script>
                 setTimeout(get_time, 1000);
             </script>
         </div>
-
+        <?php
+        }
+        ?>
 
         <!--        --><?php
         //        $contador = 5; // muestra los 5 últimos mensajes...

@@ -55,6 +55,8 @@ if($canales != null && $usuarios != null){
 
         <p><label>Nuevo precio</label> <input value="<?php echo $product->precio ?>" type="number" size="15" name="precio" id="precio"></p>
 
+        <p><label>Nuevo Stock</label> <input value="<?php echo $product->stock ?>" type="number" size="15" name="stock" id="stock"></p>
+
         <p><label>Nuevo fecha</label> <input type="date" size="15" name="date" id="date"></p>
 
         <input class="boton" type="reset" value="Borrar">

@@ -34,9 +34,10 @@ if($canales != null && $usuarios != null){
 
         <p><label>Descripción</label> <input type="text" size="15" name="descripcion" id="descripcion"></p>
 
+        <p><label>Stock</label> <input type="number" size="15" name="stock" id="stock"></p>
+
         <p><label>Precio</label> <input type="number" size="15" name="precio" id="precio"></p>
 
-<!--        <p><label>Imagen</label> <input type="text" size="15" name="imagen" id="imagen"></p>-->
         <label>Imagen</label>
         <select style="width: 200px" name="imagen" id="imagen">
             <option value="axe">axe</option>

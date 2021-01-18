@@ -50,12 +50,11 @@ include 'headerCanales.php';
                 <button class="boton2" type="submit"> Get Web Service Rest</button>
             </form>
 
+
+
         </article>
         <?php
-
     }
-
-
     ?>
 
 </section>

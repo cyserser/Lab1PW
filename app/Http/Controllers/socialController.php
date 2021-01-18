@@ -288,6 +288,6 @@ class socialController extends Controller
                 imagedestroy($src);
             }
         }
-        return redirect()->back();
+        return redirect()->to("myIoTsocial")->with('exito', 'open');
     }
 }

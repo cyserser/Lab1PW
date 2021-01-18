@@ -5,6 +5,8 @@
     <title>Mis Canales</title>
 
     <link rel="stylesheet" href="CSS/misCanales.css">
+    <script type="text/javascript" src="js/mensajesHide.js"></script>
+
 </head>
 <body>
 <?php use App\Http\Controllers\channelController;
@@ -27,6 +29,7 @@ $friendAll = socialController::getAllFriend();
 
 <hgroup>
     <h1>Listado de todos los Canales dados de alta del usuario</h1>
+    <h3 id="canalHide" style="padding: 10px;color: red;margin-left: 10%;">No tienes creado ningun canal</h3>
 </hgroup>
 
 <section>
@@ -51,6 +54,10 @@ $friendAll = socialController::getAllFriend();
                 <button class="boton2" type="submit"> Get Web Service Rest</button>
             </form>
 
+            <script>
+                canalHide();
+            </script>
+
         </article>
         <?php
 //        }
@@ -61,6 +68,7 @@ $friendAll = socialController::getAllFriend();
 
 <hgroup>
     <h1>Listado de canales de tus amigos</h1>
+    <h3 id="canalHideDos" style="padding: 10px;color: red;margin-left: 10%;">Tus amigos no tienen canales creados</h3>
 </hgroup>
 
 <section>
@@ -94,6 +102,10 @@ $friendAll = socialController::getAllFriend();
                                   action=<?php echo "getWebServiceRest" . $canal->id ?>>
                                 <button class="boton2" type="submit"> Get Web Service Rest</button>
                             </form>
+
+                            <script>
+                                canalHideDos();
+                            </script>
 
                         </article>
                         <?php

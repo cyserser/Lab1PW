@@ -31,23 +31,13 @@
         document.getElementById("defaultOpen").click();
     </script>
 
-    <!--    AJAX    -->
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
-<!---->
-<!--    <script>-->
-<!--        function get_time() {-->
-<!--            $("#numberOfItems").load("ajaxItems");-->
-<!--            setTimeout(get_time, 2000);-->
-<!--        }-->
-<!--    </script>-->
-
-
 </head>
 <body>
 
 <?php
 session_start();
-
+use App\Http\Controllers\orderController;
+use App\Http\Controllers\productController;
 use App\Http\Controllers\channelController;
 
 $canales = session('canales');
@@ -57,21 +47,9 @@ $usuariosAll = channelController::getUsers(); // pasado como static method para 
 $numberOfChannels = channelController::getNumberOfChannels();
 $name = session('name'); // nombre de login para comprobar si esta logeado o no
 
-use App\Http\Controllers\orderController;
-use App\Http\Controllers\productController;
-
 $productoAll = productController::getProducts();
+$email = session('email');
 
-//$productAdd = session('productAdd');
-//$productos = array();
-//foreach ($productoAll as $product) {
-//    array_push($productos, $product->nombre);
-//}
-//$productos = ['Básico', 'Pro', 'Premium', "Trash"];
-//session(['getProduct'=>$getProduct]);
-//$productoClicked = session('$productName');
-//$productNombre = session('productNombre');
-//$productPrecio = session('productPrecio');
 ?>
 
 <?php if ($canales != null && $usuarios != null) {
@@ -79,15 +57,6 @@ $productoAll = productController::getProducts();
 } else {
     include 'header.php';
 }
-?>
-
-<?php
-$email = session('email');
-//if ($email == "admin") {
-//    ?>
-<!--    <button class="botonCard" onclick="location.href = 'addProduct'">Añadir producto</button>-->
-<!--    --><?php
-//}
 ?>
 
 <aside id="lateral">
@@ -105,7 +74,6 @@ $email = session('email');
                 $numProductos = $numProductos + $cantidad ;
                 $precio = $cantidad*($product->precio);
                 $precioTotal = $precioTotal+$precio;
-//                $productIndex=session($product->nombre);
                 echo "<tr><td> $product->nombre";
                 echo "</td><td>$cantidad</td>";
                 echo "<td>$precio</td>";
@@ -153,16 +121,7 @@ $email = session('email');
                 </div>
             </form>
     </div>
-<!--        <form name="pago" method='get' action="checkout">-->
-<!--            <input class="botonCard" type='submit' name='Checkout' value='Checkout'>-->
-<!--            <input type="hidden" name="cantidadFinal" value="--><?php //echo $precioTotal ?><!--">-->
-<!--            <input class="botonCard" type="submit" name="pay" value="Pagar">-->
-<!--        </form>-->
-        <?php
-//        }
-        ?>
-    </div>
-    </div>
+
 </aside>
 
 <section id="main">
@@ -188,6 +147,7 @@ $email = session('email');
                 foreach ($productoAll as $producto) {
                     ?>
                     <div class="columnProduct">
+                        <p class="center"><?php echo "Stock: ".$producto->stock?></p>
                         <img src="<?php echo "img/".$producto->imagen.".png" ?>" alt="axe" style="width:100%">
                         <div class="container">
 
@@ -205,6 +165,27 @@ $email = session('email');
                                     <form name="productoDelete"
                                           action="<?php echo "deleteProduct" . $producto->id ?>">
                                         <input class="botonCard" type="submit" value="Borrar"/>
+                                    </form>
+                                    <form name="formularioProducto" method="get" action="procesarCompra">
+                                        <input type="hidden" name="producto" value="<?php echo $producto->nombre ?>">
+                                        <div class="center">
+                                            <input class="botonCard" type="submit" value="Añadir cesta"/>
+                                            <select type="number" name="cantidad">
+                                                <option>
+                                                    1
+                                                </option>
+                                                <option>
+                                                    2
+                                                </option>
+                                                <option>
+                                                    3
+                                                </option>
+                                                <option>
+                                                    4
+                                                </option>
+                                            </select>
+                                        </div>
+
                                     </form>
                                 </div>
                                 <?php
@@ -228,7 +209,6 @@ $email = session('email');
                                         </option>
                                     </select>
                                 </div>
-<!--                                <input type="number" name="cantidad" value="1">-->
                                 <input class="botonCard" type="submit" value="Añadir cesta"/>
                                 <?php
                                 }
@@ -253,9 +233,6 @@ $email = session('email');
     </article>
 </section>
 
-<!--<script>-->
-<!--    setTimeout(get_time, 1000);-->
-<!--</script>-->
 <?php include 'footer.php'; ?>
 
 </body>

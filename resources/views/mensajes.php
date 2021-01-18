@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
     <link rel="stylesheet" href="CSS/canales.css">
+    <script type="text/javascript" src="js/mensajesHide.js"></script>
 
 </head>
 
@@ -45,38 +46,50 @@ $messagesAll = socialController::getAllMessages();
 
 </div>
 <form method="get" name="seguirSocial" id="seguirSocial" action="<?php echo "sendMessage" ?>">
-    <div class="center">
-        <p>Write your message</p>
-        <textarea name="textarea" id="textarea" placeholder="Escribe tu mensaje aqui"></textarea>
-        <select name="selector" id="selector">
-            <?php
-            foreach ($usersAll as $user) {
-                if (socialController::comprobarBond($user->id) == true) {
-                    ?>
-                    <option name="option" id="option"> <?php echo $user->nombre ?></option>
-                    <?php
-                }
-            }
+    <?php
+    foreach ($friendAll as $friends) {
+        if (socialController::comprobarBond($friends->id_friend) == true) {
             ?>
-        </select>
-        <br>
-        <input type="radio" name="radioButton" value="public" checked>
-        <label>Public</label>
-        <input type="radio" name="radioButton" value="private">
-        <label>Private</label>
-        <?php
-        foreach ($usersAll as $user) {
-            if (socialController::comprobarBond($user->id) == true) {
-                ?>
-                <input class="boton2" id="sendMessage" type="submit" value="Send message">
-                <?php
-                break;
-            }
-        }
-        ?>
-    </div>
+            <div class="center">
+                <p>Write your message</p>
+                <textarea name="textarea" id="textarea" placeholder="Escribe tu mensaje aqui"></textarea>
+                <select name="selector" id="selector">
+                    <?php
+                    foreach ($usersAll as $user) {
+                        if (socialController::comprobarBond($user->id) == true) {
+                            ?>
+                            <option name="option" id="option"> <?php echo $user->nombre ?></option>
+                            <?php
+                        }
+                    }
+                    ?>
+                </select>
+                <br>
+                <input type="radio" name="radioButton" value="public" checked>
+                <label>Public</label>
+                <input type="radio" name="radioButton" value="private">
+                <label>Private</label>
 
+                <input class="boton2" id="sendMessage" type="submit" value="Send message">
+
+            <script>
+                mensajesHide();
+            </script>
+
+            </div>
+            <?php
+            break;
+        } else {
+            ?>
+            <p id="mensajeHide" style="color: red;font-size: 2vw;text-align: center">Debes de seguir a una persona primero!!</p>
+            <?php
+
+        }
+
+    }
+    ?>
 </form>
+
 <div class="grid-containerTres">
     <h2 style="padding: 10px">Your messages</h2>
     <p style="color: cornflowerblue">Mensajes enviados azul</p>

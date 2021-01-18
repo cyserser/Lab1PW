@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\carrito;
 use App\Invoice;
 use App\Order;
 use App\OrderDetail;
@@ -13,11 +12,12 @@ class productController extends Controller
 {
     public function newProduct(){
 
-        if(isset($_GET["nombreProducto"],$_GET["descripcion"],$_GET["precio"], $_GET['imagen'],$_GET["date"])) {
+        if(isset($_GET["nombreProducto"],$_GET["descripcion"],$_GET["precio"],$_GET["stock"], $_GET['imagen'],$_GET["date"])) {
 
             $nombreProducto = $_GET["nombreProducto"];
             $descripcion = $_GET["descripcion"];
             $precio = $_GET["precio"];
+            $stock = $_GET["stock"];
             $imagen = $_GET["imagen"];
             $fecha = $_GET["date"];
 
@@ -33,6 +33,7 @@ class productController extends Controller
             $product->nombre = $nombreProducto;
             $product->descripcion = $descripcion;
             $product->precio = $precio;
+            $product->stock = $stock;
             $product->imagen = $imagen;
             $product->fecha = $fecha;
             $product->save();
@@ -53,10 +54,11 @@ class productController extends Controller
     public function editProduct($id){
         $product = Product::where('id', $id)->first();
 
-        if(isset($_GET["nombreProducto"],$_GET["descripcion"],$_GET["precio"],$_GET["imagen"],$_GET["date"])) {
+        if(isset($_GET["nombreProducto"],$_GET["descripcion"],$_GET["precio"],$_GET["stock"],$_GET["imagen"],$_GET["date"])) {
             $nombreProducto = $_GET["nombreProducto"];
             $descripcion = $_GET["descripcion"];
             $precio = $_GET["precio"];
+            $stock = $_GET["stock"];
             $imagen = $_GET["imagen"];
             $fecha = $_GET["date"];
 
@@ -73,6 +75,7 @@ class productController extends Controller
             $product->nombre = $nombreProducto;
             $product->descripcion = $descripcion;
             $product->precio = $precio;
+            $product->stock = $stock;
             $product->imagen = $imagen;
             $product->fecha = $fecha;
             $product->save();
@@ -143,6 +146,7 @@ class productController extends Controller
         return redirect()->to("myIoTshop");
     }
 
+
     public function checkout(){
 
         if(isset($_GET['cantidadFinal'])){
@@ -153,7 +157,7 @@ class productController extends Controller
             $order = new Order();
             $order->id_user = session('user');
             $order->total = $cantidadFinal;
-            $order->estado = "Pending";
+            $order->estado = "Stock pending";
             $order->save();
             session(['orderID'=>$order->id]);
 
@@ -167,8 +171,18 @@ class productController extends Controller
                     $orderDetail->id_product = $producto->id;
                     $orderDetail->cantidad = session($producto->nombre);
                     $orderDetail->save();
+
+                    //Decrementamos el stock
+                    $nuevoStock = $producto->stock - session($producto->nombre);
+                    if($nuevoStock < 0){
+                        return  "<h3>Un producto se ha quedado sin stock. Operación Cancelada.";
+                    }
+                    Product::where('id', $producto->id)->update(array('stock' => $nuevoStock));
                 }
             }
+
+            // Orden satisfecha
+            Order::where('id', $order->id)->update(array('estado' => 'Pendiente de pago'));
 
             //Factura
             $factura = new Invoice();

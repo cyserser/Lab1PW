@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
     <link rel="stylesheet" href="CSS/canales.css">
+    <script type="text/javascript" src="js/mensajesHide.js"></script>
 
 </head>
 
@@ -44,18 +45,12 @@ $getFriendCount = socialController::getFriendCount();
 
 </div>
 
-<?php
-if ($getFriendCount == 0) {
-    ?>
-    <h2 style="padding: 10px">You don't have any friends yet</h2>
+<script>
 
-    <?php
-} else {
-    ?>
-    <h2 style="padding: 10px">These friends you are following</h2>
-    <?php
-}
-?>
+</script>
+
+<h2 style="padding: 10px;color: #1f7199">These friends you are following</h2>
+<h3 id="amigosHide" style="padding: 10px;color: red;margin-left: 10px">You aren't following anybody</h3>
 
 <section>
     <?php
@@ -65,29 +60,36 @@ if ($getFriendCount == 0) {
                 if ($friend->id_friend == $user->id) {
                     ?>
                     <article class="canalArticulo">
-                        <?php echo $user->id ?>
                         <p>Nombre: <?php echo $user->nombre ?> </p>
                         <p>Email:<?php echo $user->email ?></p>
                         <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
                     </article>
-                    <?php
 
+                    <script>
+                        amigosHide();
+                    </script>
+
+                    <?php
                 }
             }
         }
-
     }
     ?>
-    <h2 style="padding: 10px">These friends are following you</h2>
+    <h2 style="padding: 10px;color: #0E9A00">These friends are following you</h2>
+    <h3 id="amigosHideDos" style="padding: 10px;color: red;margin-left: 10px">Nobody is following you</h3>
     <?php
     foreach ($usersAll as $user) {
         if (socialController::meSiguen($user->id) == true) {
             ?>
             <article class="canalArticulo">
-                <?php echo $user->id ?>
                 <p>Nombre: <?php echo $user->nombre ?> </p>
                 <p>Email:<?php echo $user->email ?></p>
                 <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
+
+                <script>
+                    amigosHideDos();
+                </script>
+
             </article>
             <?php
         }

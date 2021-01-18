@@ -7,8 +7,13 @@
 <body>
 
 <?php
-    if (session('status')!=null)
+
+use App\Http\Controllers\productController;
+
+if (session('status')!=null)
         echo "<h2>".session('status')."</h2>";
 ?>
+<button class="botonCard" onclick="location.href = 'vaciarCarrito'">Volver a la tienda</button>
+
 </body>
 </html>
