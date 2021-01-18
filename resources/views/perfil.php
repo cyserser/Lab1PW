@@ -8,22 +8,77 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
 
+    <script type="text/javascript" src="js/comprobarEditarProfile.js"></script>
+
 </head>
 
-<?php include 'header.php';?>
+<?php
+$canales = session('canales');
+$usuarios = session('user');
+if ($usuarios != null) {
+    include 'headerLogged.php';
+} else {
+    include 'header.php';
+}?>
 <body>
 
 <div class="grid-container">
 
     <div class="grid-itemDos">
-        <button class="botonSocialOpciones">Members</button>
-        <button class="botonSocialOpciones">Friends</button>
-        <button class="botonSocialOpciones">Messages</button>
-        <button class="botonSocialOpciones">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "miembros" ?>'">Members</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "amigos" ?>'">Friends</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "mensajes" ?>'">Messages</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "perfil" ?>'">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "user" ?>'">Channels</button>
+    </div>
+
+    <div class="grid-itemDos">
+        <hgroup>
+            <h1>Mi Perfil</h1>
+        </hgroup>
+        <section class="sectionTwo">
+            <form method="post" name="editarProfile" id="editarProfile" enctype="multipart/form-data" data-ajax='false' action="<?php echo "procesarProfile" ?>">
+                <?= csrf_field() ?>
+                <div class="grid-containerSocial">
+                    <div class="grid-itemSocial">
+                        <img style="width: 10vw;height: auto;" src=<?php if(file_exists("img/".session('name').".jpg")){ echo "img/".session('name').".jpg"; }else{ echo "\"img/man.png\"";} ?>>
+                        <input style="size: 2vw" type="file" name = image id="image">
+                    </div>
+                    <div class="grid-itemSocial">
+                        <h3>Mi estado</h3>
+                        <textarea style="width: 40vw;height: 10vw" id="descripcion" name="descripcion" class="textJustify"><?php if(session()->has('descripcion')){ echo session('descripcion'); } ?></textarea>
+                    </div>
+                </div>
+                <input class="boton2" type="button" value="Editar" onclick="comprobarEditarProfile();">
+            </form
+        </section>
     </div>
 
 </div>
-<h2 style="padding: 10px">Other members</h2>
 </body>
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
 </html>
+
+
+<!--<div class="grid-itemDos">-->
+<!--    <hgroup>-->
+<!--        <h1>Mi Perfil</h1>-->
+<!--    </hgroup>-->
+<!--    <section class="sectionTwo">-->
+<!--        <form method="post" name="editarProfile" id="editarProfile" enctype="multipart/form-data" data-ajax='false' action="--><?php //echo "procesarProfile" ?><!--">-->
+<!--            --><?//= csrf_field() ?>
+<!--            <div class="grid-containerSocial">-->
+<!--                <div class="grid-itemSocial">-->
+<!--                    <img class="profileImg" src="img/man.png" alt="imagen">-->
+<!--                </div>-->
+<!--                <div class="grid-itemSocial">-->
+<!--                    <h3>Mi estado</h3>-->
+<!--                    <textarea style="width: 40vw;height: 10vw" class="textJustify">A social network is a social structure made up of a set of social-->
+<!--                        actors,-->
+<!--                        sets of dyadic ties, and other social interactions between actors.</textarea>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </form-->
+<!--    </section>-->
+<!--</div>-->

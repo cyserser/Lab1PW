@@ -5,10 +5,17 @@
     <title>Plataforma Web para IoT</title>
 
     <link rel="stylesheet" href="CSS/index.css">
-
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        function get_time() {
+            $("#ajaxMessages").load("ajaxMessages");
+            setTimeout(get_time, 2000);
+        }
+    </script>
 
 </head>
 <body>
@@ -27,6 +34,7 @@ $name = session('name'); // nombre de login para comprobar si esta logeado o no
 
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\productController;
+use App\Http\Controllers\socialController;
 
 $productoAll = productController::getProducts();
 ?>
@@ -40,6 +48,12 @@ $productoAll = productController::getProducts();
 
 <?php
 $email = session('email');
+$messagesAllReverse = socialController::getAllMessagesReverse();
+$messagesAll = socialController::getAllMessages();
+$usersAll = socialController::getAllUser();
+$privateMessage = socialController::getPrivateMessages(session("user"));
+$profilesAllReverse = socialController::getAllProfilesReverse();
+$getTextCheck = socialController::getProfilesCount(session('user'));
 ?>
 
 
@@ -62,13 +76,33 @@ $email = session('email');
             <section class="sectionTwo">
                 <div class="grid-containerSocial">
                     <div class="grid-itemSocial">
-                        <img class="profileImg" src="img/man.png" alt="imagen">
+                        <img class="profileImg" src=<?php if (file_exists("img/" . session('name') . ".jpg")) {
+                            echo "img/" . session('name') . ".jpg";
+                        } else {
+                            echo "\"img/man.png\"";
+                        } ?>>
+
                     </div>
                     <div class="grid-itemSocial">
                         <h3>Mi estado</h3>
-                        <p class="textJustify">A social network is a social structure made up of a set of social
-                            actors,
-                            sets of dyadic ties, and other social interactions between actors.</p>
+                        <?php
+
+                        if($getTextCheck == false){
+                            echo "NO ha escrito nada";
+                            } else {
+                        foreach ($profilesAllReverse as $profile) {
+                            if ($profile->id_user == session('user')) {
+
+
+                                ?>
+                                <p class="textJustify"> <?php echo $profile->text ?> </p>
+                                <?php
+                                break;
+                                }
+                            }
+
+                        }
+                        ?>
                     </div>
                 </div>
             </section>
@@ -78,11 +112,25 @@ $email = session('email');
                 <h1>Opciones</h1>
             </hgroup>
             <section class="grid-itemSocial">
-                <button onclick="location.href = 'miembros'" style="float: left" class="botonSocialOpcionesDos">Miembros</button>
-                <button onclick="location.href = 'amigos'"style="float: right" class="botonSocialOpcionesDos">Amigos</button>
-                <button onclick="location.href = 'mensajes'" class="botonSocialOpciones">Mensajes</button>
-                <button onclick="location.href = 'canales'" class="botonSocialOpciones">Canales</button>
-                <button onclick="location.href = 'perfil'" class="botonSocialOpciones">Perfil</button>
+                <?php
+                if (session('user') != null) {
+                    ?>
+                    <button onclick="location.href = 'miembros'" style="float: left" class="botonSocialOpcionesDos">
+                        Miembros
+                    </button>
+                    <button onclick="location.href = 'amigos'" style="float: right" class="botonSocialOpcionesDos">
+                        Amigos
+                    </button>
+                    <button onclick="location.href = 'mensajes'" class="botonSocialOpciones">Mensajes</button>
+                    <button onclick="location.href = 'user'" class="botonSocialOpciones">Canales</button>
+                    <button onclick="location.href = 'perfil'" class="botonSocialOpciones">Perfil</button>
+                    <?php
+                } else {
+                    ?>
+                    <button onclick="location.href = 'login'" class="botonSocialOpciones">Login</button>
+                    <?php
+                }
+                ?>
             </section>
 
         </div>
@@ -92,15 +140,99 @@ $email = session('email');
         <hgroup>
             <h1>Muro de myWebIoT</h1>
         </hgroup>
-        <p>Último mensaje</p>
-        <p>Penúltimo mensaje</p>
+
+
+        <div class="" id="ajaxMessages">
+            <script>
+                setTimeout(get_time, 1000);
+            </script>
+        </div>
+
+
+        <!--        --><?php
+        //        $contador = 5; // muestra los 5 últimos mensajes...
+        //        foreach ($messagesAllReverse as $message) {
+        //            foreach ($usersAll as $user) {
+        //                if ($user->id == $message->recip) {
+        //                    if ($message->pm == "public") {
+        //                        ?>
+        <!--                        <div class="socialDivEnviado">-->
+        <!--                            --><?php
+        //                            foreach ($usersAll as $userDos) {
+        //                                if ($userDos->id == $message->auth) {
+        //                                    ?>
+        <!--                                    <p>Emisor: --><?php //echo $userDos->nombre ?><!--</p>-->
+        <!--                                    --><?php
+        //                                }
+        //                            }
+        //                            ?>
+        <!--                            <p>Receptor: --><?php //echo $user->nombre ?><!--</p>-->
+        <!--                            <p>Mensaje: --><?php //echo $message->message ?><!--</p>-->
+        <!--                            <p>Fecha: --><?php //echo $message->fecha ?><!--</p>-->
+        <!--                        </div>-->
+        <!--                        --><?php
+        //                    }
+        //                    if ($message->auth == session('user') && $message->pm != "public") {
+        //                        ?>
+        <!--                        <div class="socialDivWhisper">-->
+        <!--                            --><?php
+        //                            foreach ($usersAll as $userDos) {
+        //                                if ($userDos->id == session('user')) {
+        //                                    ?>
+        <!--                                    <p>Emisor: --><?php //echo $userDos->nombre ?><!--</p>-->
+        <!--                                    --><?php
+        //                                }
+        //                            }
+        //                            ?>
+        <!--                            <p>Receptor: --><?php //echo $user->nombre ?><!--</p>-->
+        <!--                            <p>Tipo: --><?php //echo $message->pm ?><!--</p>-->
+        <!--                            <p>Mensaje: --><?php //echo $message->message ?><!--</p>-->
+        <!--                            <p>Fecha: --><?php //echo $message->fecha ?><!--</p>-->
+        <!--                        </div>-->
+        <!--                        --><?php
+        //                    }
+        //                }
+        //            }
+        //
+        //            if (--$contador == 0) break;
+        //
+        //            if ($message->recip == session('user')) {
+        //                foreach ($usersAll as $user) {
+        //                    if ($user->id == $message->auth) {
+        //                        if ($message->pm == "private") {
+        //                            ?>
+        <!--                            <div class="socialDivWhisper">-->
+        <!--                                <p>Emisor: --><?php //echo $user->nombre ?><!--</p>-->
+        <!--                                --><?php
+        //                                foreach ($usersAll as $userDos) {
+        //                                    if ($userDos->id == session('user')) {
+        //                                        ?>
+        <!--                                        <p>Receptor: --><?php //echo $userDos->nombre ?><!--</p>-->
+        <!--                                        --><?php
+        //                                    }
+        //                                }
+        //                                ?>
+        <!--                                <p>Tipo: --><?php //echo $message->pm ?><!--</p>-->
+        <!--                                <p>Mensaje: --><?php //echo $message->message ?><!--</p>-->
+        <!--                                <p>Fecha: --><?php //echo $message->fecha ?><!--</p>-->
+        <!--                            </div>-->
+        <!--                            --><?php
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //
+        //
+        //        ?>
     </article>
 
 
 </section>
 
-
+<script>
+    setTimeout(get_time, 1000);
+</script>
 <?php include 'footer.php'; ?>
-
 </body>
 </html>

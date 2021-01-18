@@ -31,7 +31,7 @@
 }
 
 .profileImg{
-    width: 100%;
+    width: 20vw;
     max-width: 20vw;
     height: auto;
     border-radius: 50%;
@@ -122,19 +122,64 @@
     font-size: 15px;
 }
 
+.botonSocialOpcionesTres{
+    background-color: deepskyblue;
+    width: 15vw;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Comic Sans MS",arial,sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 .grid-containerTres {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
 }
 
 .center {
-
     margin: auto;
-
     width: 60%;
-
     border: 5px solid #FFFF00;
-
     padding: 10px;
 
 }
+.socialDivEnviado{
+    font-family: "Comic Sans MS";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    padding: 5px;
+    border: 1px solid blue;
+    background: aliceblue;
+}
+
+.socialDivRecibido{
+    font-family: "Comic Sans MS";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    padding: 5px;
+    border: 1px solid orangered;
+    background: lightgreen;
+}
+
+.socialDivWhisper{
+    font-family: "Comic Sans MS";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    padding: 5px;
+    border: 1px solid blueviolet;
+    background: violet;
+}
+

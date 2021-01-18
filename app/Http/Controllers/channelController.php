@@ -46,6 +46,10 @@ class channelController extends Controller
         return redirect()->to('canales');
 
     }
+
+    public static function getAllChannels(){
+        return Canales::all();
+    }
     // Funcionalidad AJAX número de usuarios registrados
     public function ajaxUsers(){
         $user = Usuario::all();

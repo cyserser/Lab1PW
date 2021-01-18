@@ -511,6 +511,7 @@ class ComposerStaticInit04508ebe0760f534341664d71eb57522
         'App\\Http\\Controllers\\paypalController' => __DIR__ . '/../..' . '/app/Http/Controllers/paypalController.php',
         'App\\Http\\Controllers\\productController' => __DIR__ . '/../..' . '/app/Http/Controllers/productController.php',
         'App\\Http\\Controllers\\registerController' => __DIR__ . '/../..' . '/app/Http/Controllers/registerController.php',
+        'App\\Http\\Controllers\\socialController' => __DIR__ . '/../..' . '/app/Http/Controllers/socialController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',

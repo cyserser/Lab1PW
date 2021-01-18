@@ -35,24 +35,25 @@ $getFriendCount = socialController::getFriendCount();
 <div class="grid-container">
 
     <div class="grid-itemDos">
-        <button class="botonSocialOpciones">Members</button>
-        <button class="botonSocialOpciones">Friends</button>
-        <button class="botonSocialOpciones">Messages</button>
-        <button class="botonSocialOpciones">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "miembros" ?>'">Members</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "amigos" ?>'">Friends</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "mensajes" ?>'">Messages</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "perfil" ?>'">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "user" ?>'">Channels</button>
     </div>
 
 </div>
 
 <?php
-if($getFriendCount==0){
-?>
-<h2 style="padding: 10px">You don't have any friends yet</h2>
+if ($getFriendCount == 0) {
+    ?>
+    <h2 style="padding: 10px">You don't have any friends yet</h2>
 
-<?php
+    <?php
 } else {
-?>
-<h2 style="padding: 10px">These are your friends</h2>
-<?php
+    ?>
+    <h2 style="padding: 10px">These friends you are following</h2>
+    <?php
 }
 ?>
 
@@ -75,6 +76,21 @@ if($getFriendCount==0){
             }
         }
 
+    }
+    ?>
+    <h2 style="padding: 10px">These friends are following you</h2>
+    <?php
+    foreach ($usersAll as $user) {
+        if (socialController::meSiguen($user->id) == true) {
+            ?>
+            <article class="canalArticulo">
+                <?php echo $user->id ?>
+                <p>Nombre: <?php echo $user->nombre ?> </p>
+                <p>Email:<?php echo $user->email ?></p>
+                <p>Fecha de nacimiento: <?php echo $user->fechaNacimiento ?></p>
+            </article>
+            <?php
+        }
     }
     ?>
 

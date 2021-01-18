@@ -6,10 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2.1">
-      <change afterPath="$PROJECT_DIR$/public/js/followHide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/juju.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/comprobarEditarProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/channelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/channelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_11_082319_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_154414_create_messages_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/myIoTsocial.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/myIoTsocial.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/amigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/amigos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/canales.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/canales.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mensajes.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mensajes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/miembros.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/miembros.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/myIoTsocial.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myIoTsocial.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +163,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cybergangas" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -158,17 +171,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\Lab1PW\resources\views" />
-      <recent name="C:\laragon\www\Lab1PW\public\img" />
-      <recent name="C:\laragon\www\Lab1PW\public\js" />
-      <recent name="C:\laragon\www\Lab1PW\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\Lab1PW\config" />
       <recent name="C:\laragon\www\Lab1PW\public\js" />
       <recent name="C:\laragon\www\Lab1PW\public" />
       <recent name="C:\laragon\www\Lab1PW\resources\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Lab1PW\resources\views" />
+      <recent name="C:\laragon\www\Lab1PW\public\img" />
+      <recent name="C:\laragon\www\Lab1PW\public\js" />
+      <recent name="C:\laragon\www\Lab1PW\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,6 +232,8 @@
       <workItem from="1610206017097" duration="3335000" />
       <workItem from="1610352669511" duration="9976000" />
       <workItem from="1610464421610" duration="6111000" />
+      <workItem from="1610638470226" duration="7348000" />
+      <workItem from="1610645900776" duration="6136000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -294,5 +309,19 @@
     <MESSAGE value="redes sociales 2" />
     <MESSAGE value="redes sociales 2.1" />
     <option name="LAST_COMMIT_MESSAGE" value="redes sociales 2.1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610640297910">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610640297910" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610661438899">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610661438899" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610641073680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610641073680" />
   </component>
 </project>

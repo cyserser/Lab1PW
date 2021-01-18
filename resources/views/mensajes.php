@@ -7,39 +7,129 @@
 
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
+    <link rel="stylesheet" href="CSS/canales.css">
 
 </head>
 
-<?php include 'header.php';?>
+<?php
+
+use App\Http\Controllers\channelController;
+use App\Http\Controllers\socialController;
+
+$canales = session('canales');
+$usuarios = session('user');
+
+if ($usuarios != null) {
+    include 'headerLogged.php';
+} else {
+    include 'header.php';
+}
+
+$usersAll = channelController::getUsers();
+$friendAll = socialController::getAllFriend();
+$getFriendCount = socialController::getFriendCount();
+$messagesAll = socialController::getAllMessages();
+
+?>
 <body>
 
 <div class="grid-container">
 
     <div class="grid-itemDos">
-        <button class="botonSocialOpciones">Members</button>
-        <button class="botonSocialOpciones">Friends</button>
-        <button class="botonSocialOpciones">Messages</button>
-        <button class="botonSocialOpciones">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "miembros" ?>'">Members</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "amigos" ?>'">Friends</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "mensajes" ?>'">Messages</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "perfil" ?>'">Edit profile</button>
+        <button class="botonSocialOpcionesTres" onclick="location.href = '<?php echo "user" ?>'">Channels</button>
     </div>
 
 </div>
-<h2 style="padding: 10px">Your messages</h2>
+<form method="get" name="seguirSocial" id="seguirSocial" action="<?php echo "sendMessage" ?>">
+    <div class="center">
+        <p>Write your message</p>
+        <textarea name="textarea" id="textarea" placeholder="Escribe tu mensaje aqui"></textarea>
+        <select name="selector" id="selector">
+            <?php
+            foreach ($usersAll as $user) {
+                if (socialController::comprobarBond($user->id) == true) {
+                    ?>
+                    <option name="option" id="option"> <?php echo $user->nombre ?></option>
+                    <?php
+                }
+            }
+            ?>
+        </select>
+        <br>
+        <input type="radio" name="radioButton" value="public" checked>
+        <label>Public</label>
+        <input type="radio" name="radioButton" value="private">
+        <label>Private</label>
+        <?php
+        foreach ($usersAll as $user) {
+            if (socialController::comprobarBond($user->id) == true) {
+                ?>
+                <input class="boton2" id="sendMessage" type="submit" value="Send message">
+                <?php
+                break;
+            }
+        }
+        ?>
+    </div>
 
-<form method='post' action='messages.php?view=$view'>
-    <fieldset data-role="controlgroup" data-type="horizontal">
-        <legend>Type here to leave a message</legend>
-        <input type='radio' name='pm' id='public' value='0' checked='checked'>
-        <label for="public">Public</label>
-        <input type='radio' name='pm' id='private' value='1'>
-        <label for="private">Private</label>
-    </fieldset>
-    <textarea name='text'></textarea>
-    <input data-transition='slide' type='submit' value='Post Message'>
-</form><br>
+</form>
+<div class="grid-containerTres">
+    <h2 style="padding: 10px">Your messages</h2>
+    <p style="color: cornflowerblue">Mensajes enviados azul</p>
+    <p style="color: forestgreen">Mensajes recibidos verde </p>
+    <p style="color:violet;">Mensajes susurrados violeta</p>
+</div>
 
-<p>No messages yet!</p>
+<?php
+foreach ($messagesAll as $message) {
+    if ($message->auth == session('user')) {
+        foreach ($usersAll as $user) {
+            if ($user->id == $message->recip) {
+                if ($message->pm == "public") {
+                    ?>
+                    <div class="socialDivEnviado">
+                        <p>Destinatario: <?php echo $user->nombre ?></p>
+                        <p>Tipo: <?php echo $message->pm ?></p>
+                        <p>Mensaje: <?php echo $message->message ?></p>
+                        <p>Fecha: <?php echo $message->fecha ?></p>
+                    </div>
+                    <?php
+                } else { // para whisper
+                    ?>
+                    <div class="socialDivWhisper">
+                        <p>Destinatario: <?php echo $user->nombre ?></p>
+                        <p>Tipo: <?php echo $message->pm ?></p>
+                        <p>Mensaje: <?php echo $message->message ?></p>
+                        <p>Fecha: <?php echo $message->fecha ?></p>
+                    </div>
+                    <?php
+                }
+            }
+        }
+    }
+    // Mensajes que recibo yo en message de otros amigos
+    if ($message->recip == session('user')) {
+        foreach ($usersAll as $user) {
+            if ($user->id == $message->auth) {
+                ?>
+                <div class="socialDivRecibido">
+                    <p>Emisor: <?php echo $user->nombre ?></p>
+                    <p>Tipo: <?php echo $message->pm ?></p>
+                    <p>Mensaje: <?php echo $message->message ?></p>
+                    <p>Fecha: <?php echo $message->fecha ?></p>
+                </div>
+                <?php
+            }
+        }
+    }
+}
+?>
 
 </body>
-<?php include 'footer.php';?>
+<?php include 'footer.php'; ?>
 </html>
 

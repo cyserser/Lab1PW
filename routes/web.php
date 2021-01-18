@@ -145,6 +145,10 @@ Route::get('/paypal/status','paypalController@payPalStatus');
 
 Route::get('/seguirSocial{id}','socialController@seguirSocial');
 Route::get('/noSeguirSocial{id}','socialController@noSeguirSocial');
+Route::get('/sendMessage','socialController@sendMessage');
+Route::get('/ajaxMessages', 'socialController@ajaxMensajes');
+Route::post('/procesarProfile', 'socialController@procesarProfile');
+
 
 
 

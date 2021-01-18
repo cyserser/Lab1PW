@@ -20,6 +20,7 @@ return array(
     'App\\Http\\Controllers\\paypalController' => $baseDir . '/app/Http/Controllers/paypalController.php',
     'App\\Http\\Controllers\\productController' => $baseDir . '/app/Http/Controllers/productController.php',
     'App\\Http\\Controllers\\registerController' => $baseDir . '/app/Http/Controllers/registerController.php',
+    'App\\Http\\Controllers\\socialController' => $baseDir . '/app/Http/Controllers/socialController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
