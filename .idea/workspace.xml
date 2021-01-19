@@ -5,33 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2.1">
-      <change afterPath="$PROJECT_DIR$/public/img/cucu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/mensajesHide.js" afterDir="false" />
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Añadiendo stock... y terminando el resto !!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/productController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/productController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_123051_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_212821_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/juju.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/juju.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/amigos.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/amigos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/canales.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/canales.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/editProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/editProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mensajes.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mensajes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myIoTshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myIoTshop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myIoTsocial.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/myIoTsocial.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/resultsPay.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/resultsPay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +220,8 @@
       <workItem from="1610464421610" duration="6111000" />
       <workItem from="1610638470226" duration="7348000" />
       <workItem from="1610645900776" duration="6136000" />
-      <workItem from="1610995935972" duration="9835000" />
+      <workItem from="1610995935972" duration="10061000" />
+      <workItem from="1611059076169" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -287,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610411961684</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Añadiendo stock... y terminando el resto !!!">
+      <created>1611006938325</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611006938325</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +303,7 @@
     <MESSAGE value="T2.2 Git ignore" />
     <MESSAGE value="redes sociales 2" />
     <MESSAGE value="redes sociales 2.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="redes sociales 2.1" />
+    <MESSAGE value="Añadiendo stock... y terminando el resto !!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo stock... y terminando el resto !!!" />
   </component>
 </project>

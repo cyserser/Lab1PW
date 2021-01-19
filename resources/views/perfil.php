@@ -7,8 +7,6 @@
 
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/myIoTsocial.css">
-
-
     <script type="text/javascript" src="js/comprobarEditarProfile.js"></script>
 
 </head>
@@ -52,13 +50,14 @@ if (session()->has('exito')) {
                         <div class="grid-itemSocial">
                             <img style="width: 10vw;height: auto;max-height: 10vw"
                                  src=<?php if (file_exists("img/" . session('name') . ".jpg")) {
-                                echo "img/" . session('name') . ".jpg";
+                                echo "img/" . session('name') . ".jpg"; // si existe la imagen... la mostramos
                             } else {
-                                echo "\"img/man.png\"";
+                                echo "\"img/man.png\""; // si no existe ponemos la imagen por defecto
                             } ?>>
                             <input style="size: 2vw" type="file" name=image id="image">
                         </div>
                     </div>
+
                     <div class="socialDivEnviado">
                         <div class="grid-itemSocial">
                             <h3>Mi estado</h3>

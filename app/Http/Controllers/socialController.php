@@ -238,7 +238,7 @@ class socialController extends Controller
 
         if (isset($_FILES['image']['name'])){
 
-           // Eliminamos el antiguo
+           // Eliminamos el que estaba con el unlink a la ruta public
             if(file_exists("img/".session('name').".jpg")){
                 unlink(public_path("img/".session('name').".jpg"));
             }
