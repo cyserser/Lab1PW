@@ -5,10 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Añadiendo stock... y terminando el resto !!!">
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Comentando 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/socialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +220,7 @@
       <workItem from="1610638470226" duration="7348000" />
       <workItem from="1610645900776" duration="6136000" />
       <workItem from="1610995935972" duration="10061000" />
-      <workItem from="1611059076169" duration="1043000" />
+      <workItem from="1611059076169" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -272,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611006938325</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Comentando 1.0">
+      <created>1611060141225</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611060141225</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +310,7 @@
     <MESSAGE value="redes sociales 2" />
     <MESSAGE value="redes sociales 2.1" />
     <MESSAGE value="Añadiendo stock... y terminando el resto !!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo stock... y terminando el resto !!!" />
+    <MESSAGE value="Comentando 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentando 1.0" />
   </component>
 </project>

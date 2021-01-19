@@ -86,23 +86,19 @@ $getTextCheck = socialController::getProfilesCount(session('user'));
                     <div class="grid-itemSocial">
                         <h1>Mi estado</h1>
                         <?php
-
                         if($getTextCheck == false){
                             ?>
                             <h1 style="color: red">No ha modificado su estado aun</h1>
                         <?php
                             } else {
                         foreach ($profilesAllReverse as $profile) {
-                            if ($profile->id_user == session('user')) {
-
-
+                            if ($profile->id_user == session('user')) { // mostramos la ultimo modificacion
                                 ?>
                                 <p class="textJustify"> <?php echo $profile->text ?> </p>
                                 <?php
                                 break;
                                 }
                             }
-
                         }
                         ?>
                     </div>

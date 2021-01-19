@@ -243,6 +243,7 @@ class socialController extends Controller
                 unlink(public_path("img/".session('name').".jpg"));
             }
 
+            //guardamos en la carpeta img
             $saveto = "img/".session('name').".jpg";
             move_uploaded_file($_FILES['image']['tmp_name'], $saveto);
             $typeok = TRUE;
