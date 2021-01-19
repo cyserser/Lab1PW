@@ -52,7 +52,7 @@ class productController extends Controller
     }
 
     public function editProduct($id){
-        $product = Product::where('id', $id)->first();
+        $product = Product::where('id', '=', $id)->first();
 
         if(isset($_GET["nombreProducto"],$_GET["descripcion"],$_GET["precio"],$_GET["stock"],$_GET["imagen"],$_GET["date"])) {
             $nombreProducto = $_GET["nombreProducto"];
@@ -62,11 +62,11 @@ class productController extends Controller
             $imagen = $_GET["imagen"];
             $fecha = $_GET["date"];
 
-            // Comprobando que el producto existe, solo el que tenga ese id puede dejar el mismo nombre
+//          Comprobando que el producto existe, solo el que tenga ese id puede dejar el mismo nombre
             $productosAll = self::getProducts();
-            foreach($productosAll as $product){
-                if($product->id != $id){
-                    if($product->nombre == $nombreProducto ){
+            foreach($productosAll as $productA){
+                if($productA->id != $id){
+                    if($productA->nombre == $nombreProducto ){
                         return "<h3>El producto ya existe!</h3>";
                     }
                 }
@@ -85,6 +85,12 @@ class productController extends Controller
     }
 
     public function deleteProduct($id){
+        // Si alguien ha realizado una compra de ese producto no dejaremos borrarlo.
+        $orderDetail = OrderDetail::where('id_product', $id)->get();
+        if($orderDetail != '[]'){
+            return "<h3>No se puede puede borrar el producto. Existen ordenes detalles con dicho producto.
+                    Contacte con el administrador para obtener ayuda</h3>";
+        }
         Product::where('id', $id)->delete();
         return redirect()->to('myIoTshop');
     }
