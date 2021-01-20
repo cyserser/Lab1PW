@@ -83,7 +83,6 @@ $messagesAll = socialController::getAllMessages();
             ?>
             <p id="mensajeHide" style="color: red;font-size: 2vw;text-align: center">Debes de seguir a una persona primero!!</p>
             <?php
-
         }
 
     }

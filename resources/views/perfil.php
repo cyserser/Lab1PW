@@ -61,7 +61,7 @@ if (session()->has('exito')) {
                     <div class="socialDivEnviado">
                         <div class="grid-itemSocial">
                             <h3>Mi estado</h3>
-                            <textarea style="width: 40vw;height: 10vw" id="descripcion" name="descripcion"
+                            <textarea style="width: 30vw;height: 10vw" id="descripcion" name="descripcion"
                                       class="textJustify"><?php if (session()->has('descripcion')) {
                                     echo session('descripcion');
                                 } ?></textarea>

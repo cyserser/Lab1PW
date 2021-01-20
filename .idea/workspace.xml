@@ -5,10 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="redes sociales 2.1">
+    <list default="true" id="30fd86c2-a0d1-43cf-aa8d-e6a3dbf244c1" name="Default Changelist" comment="Arreglando malentendido en editar ojo!">
+      <change afterPath="$PROJECT_DIR$/public/img/admin.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/productController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/productController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_212821_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_123026_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mensajes.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mensajes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/perfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/perfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +223,7 @@
       <workItem from="1610645900776" duration="6136000" />
       <workItem from="1610995935972" duration="10061000" />
       <workItem from="1611059076169" duration="1701000" />
+      <workItem from="1611138109399" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Commit final Lab 1">
       <created>1607775776972</created>
@@ -279,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611060141225</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Arreglando malentendido en editar ojo!">
+      <created>1611091671376</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611091671376</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,9 +321,14 @@
     <MESSAGE value="redes sociales 2.1" />
     <MESSAGE value="Añadiendo stock... y terminando el resto !!!" />
     <MESSAGE value="Comentando 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comentando 1.0" />
+    <MESSAGE value="Arreglando malentendido en editar ojo!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglando malentendido en editar ojo!" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611091673901">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611091673901" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611085675622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
